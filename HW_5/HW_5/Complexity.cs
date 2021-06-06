@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HW_5
 {
-    public enum ComplexityLevels: int
+    public enum ComplexityLevels
     {
         Difficult = 4,
         Medium = 2,

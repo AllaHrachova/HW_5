@@ -6,9 +6,8 @@ namespace HW_5
 {
     class InputHelper
     {
-        public int input;
-        public int max;
-        public int min;
+        int input;
+
         public int Input
         {
             get
@@ -20,28 +19,7 @@ namespace HW_5
                 input = value;
             }
         }
-        public int Max
-        {
-            get
-            {
-                return max;
-            }
-            set
-            {
-                max = value;
-            }
-        }
-        public int Min
-        {
-            get
-            {
-                return min;
-            }
-            set
-            {
-                min = value;
-            }
-        }
+
         public InputHelper()
         {
             do
@@ -58,16 +36,17 @@ namespace HW_5
             }
             while (input < 0);
         }
-        public InputHelper(int Max, int Min)
+
+        public InputHelper(int max, int min)
         {
-        do
+            do
             {
                 try
                 {
                     input = Convert.ToInt32(Console.ReadLine());
-                    if ((input > Max) || (input < Min))
+                    if ((input > max) || (input < min))
                     {
-                        Console.WriteLine("Введите число от " + Min + " до " + Max);
+                        Console.WriteLine("Введите число от " + min + " до " + max);
                     }
                     else
                     {
@@ -80,7 +59,7 @@ namespace HW_5
                     input = 0;
                 }
             }
-            while ((input < Min) || (input > Max));
+            while ((input < min) || (input > max));
         }
     }
 }

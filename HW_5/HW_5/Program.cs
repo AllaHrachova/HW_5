@@ -7,14 +7,13 @@ namespace HW_5
     {
         static void Main(string[] args)
         {
-            Task Task1 = new Task();
-            Task1.AddTask();
-            Task1.TimeCount();
-            Console.WriteLine("Для выполнения всех задач всего нужно " + Task1.TotalTime + " часов");
-            Task1.SeparateTasksByPriority();
-            Task1.PriorityList();
-            Console.WriteLine(Task1.Name);
-            Task1.TasksForNDays();
+            Task task1 = new Task();
+            task1.AddTask();
+            task1.CountTotalTime();
+            Console.WriteLine("Для выполнения всех задач всего нужно " + task1.TotalTime + " часов");
+            task1.ShowPriorityList();
+            Console.WriteLine(task1.Name);
+            task1.DefineTasksForNDays();
         }
     }
 }

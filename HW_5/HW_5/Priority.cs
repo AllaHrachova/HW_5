@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HW_5
 {
-   public enum PriorityLevels: int
+   public enum PriorityLevels
     {
         High = 1,
         Medium = 2,
